@@ -1,0 +1,1310 @@
+
+/* está ok = 🎯🎯🎯🎯🎯 */
+/***** Inicia Cabecera Glosario *****/
+body{
+    background: var(--color-fondo3);
+}
+
+.cabecera__glosario{
+    min-height: 100vh;
+    /* min-height: calc(100% + 10vh); */
+    /* min-height: clamp(95vh, 110vh, 120vh); */
+    /* background: #000; */
+    /* width: fit-content min(100%, max(500px, 100%)); */
+    /* min-width: 100%; */
+    /* min-height: clamp(85vh, 98vh, 120vh); */
+}
+
+.logo__nav--glosario{
+    /* padding: 0.5rem 0 0 1.5rem; */
+    padding: 1.25rem 0 0 1.5rem;
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bolder;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    background: var(--color-fondo3);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Inicio Sub-sección CSS glosario - círculos*/
+.contenedor__glosario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-family: 'Roboto', sans-serif;
+    /* background: var(--color-fondo3); */
+}
+
+.partes__glosario{
+    position: relative;
+}
+
+.partes__glosario .texto__circulo{ /* círculo morado con texto => "tienes dudas con..." */
+    position: absolute;
+    top: 10em;
+    left: 3em;
+    padding: 2em 0;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 50%;
+    background: var(--color-fondo2);
+    text-align: center;
+    animation: float 4.4s infinite ease-in-out;
+}
+
+.partes__glosario .texto__circulo h6{ /* letras de "tienes dudas con..." */
+    font-size: 1em;
+    margin-top: 1.6em; 
+    margin-bottom: 0.7em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.partes__glosario .texto__circulo a{  /* forma botón entra aquí */
+    /* border: 2px var(--color-fondo1) solid; */
+    border: 2px var(--color-fondo-y-letra-blanco) solid;
+    /* border: 2px var(--color-fondo4) solid; */
+    /* color:  var(--color-fondo-y-letra-blanco);  */
+    /* color: var(--color-fondo4); */
+    color: var(--color-letra-amarillo);
+    padding: 0.6em;
+    /* font-size: 1em; */
+    font-size: clamp(0.85em, 1.2vw, 1.4em);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Parte 3 */
+/* Ajustar el texto deentro del circulo usando gradient radial con un valor afuera */
+.contenedor__glosario .texto__circulo span:before, span:after{ 
+    content: "";
+    width: 25%;
+    height: 100%;
+}
+    
+.texto__circulo span:before{ 
+    float: left;
+    shape-outside: radial-gradient(
+        farthest-side at 100%,
+        transparent 100%,
+        #fff);
+}
+
+.texto__circulo span:after{
+    float: right;
+    shape-outside: radial-gradient(
+        farthest-side at 0%,
+        transparent 100%,
+        #fff);
+}
+
+/* Parte 4 */
+/* Imagen ppal con círculo */
+.partes__glosario .imgagen{
+    width: 15.5em;
+    height: 15.5em;
+    border-radius: 50%;
+    background: url(../img/imgGlosario.jpg) no-repeat center; /* aquí en CSS la img va con ../ */
+    background-size: cover;
+    animation: float 5.5s infinite ease-in-out;
+}
+
+/* Parte 5 */
+/* Decoración del circulo y el aro */
+.partes__glosario .circulo{
+    position: absolute;
+    left: -25px;
+    width: 65%;
+    height: 65%;
+    z-index: 0;
+    border-radius: 50%;
+    animation: float 5s infinite ease-in-out;
+    background: var(--color-fondo1);
+}
+
+.contenedor__glosario .partes__glosario .aro{
+    position: absolute;
+    top: -4em;
+    right: -1.5px;
+    border: 15px var(--color-fondo4) solid;
+    width: 65%;
+    height: 65%;
+    z-index: 0;
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+}
+
+/* Parte 6 */
+/* Floating animation */
+@keyframes float{
+    50% {
+        transform: translateY(-1em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#articulos{
+    color: var(--color-fondo3);
+    /* background-color:var(--color-fondo3); */
+}
+/* Fin Sub-sección CSS glosario */
+/***** Fin cabecera Glosario *****/
+**********
+
+/* <!-- **** Inicio caja con alfabeto **** --> */
+/* .xcontenedor__contenido{
+    background: var(--color-fondo3);
+} */
+
+
+/***** Inicio contenido *****/
+.xcontenedor__contenido{
+    /* background: var(--color-fondo3); */
+    /* height: 1000vh; */
+     /* tamaño del contenedor de acordiones */
+    /* margin: 1em auto; */
+    /* background-color: rgb(86, 86, 189); */
+    /* padding: -2em 0 0 0; */
+    /* margin: -2em 0  0 0; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.contenido{
+    /* padding: 1px auto; */
+    /* margin: 1em auto; */
+    /* padding: -2em 0 0 0; */
+    /* margin: -2em 0  0 0; */
+    /* background: var(--color-fondo3); */
+    /* width: 95%; */
+    /* background-color: rgb(74, 165, 38); */
+    /* position: sticky; */
+    /* margin: 0 auto; */
+    /* position: sticky; */
+    /* top: -20px; */
+    /* top: 0; */
+    /* height: 30vh; */
+/* } */
+/* .contenido .indice{ */
+    /* background-color: darkgreen; */
+    /* margin: 1em */
+    /* width: 95%; */
+    /* height: 140vh; */
+    display: flex;
+    /* text-align: center; */
+    /* margin: 0 1.5em 0 -1.5em; */
+    /* padding: 1.5em 0; */
+    /* margin: 0 auto;  */
+    /* usar con flex y si quito esto se inclina a la izq */
+    /* display: grid; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* height: 35vh; */
+     /* da la distancia adecuada en móvil entre indice y separador */
+    justify-content: center;
+    background-color: var(--color-fondo3); /* ojo lo coloco para q quede sobre los otros elementos, así no se usa z-index */
+    /* z-index: 1; */
+}
+
+.contenido .indice ul{
+/* dl{ */
+    /* width: 79%; */
+    display: flex;
+    flex-wrap: wrap;
+    /* text-align: justify; */
+    padding: 10px;
+    /* flex-direction: column; */
+    justify-content: space-evenly; 
+         /* espacio entre letras */
+    /* justify-items: center; */
+    /* text-align: center; */
+    /* position:sticky; */
+}
+
+.contenido .indice li{
+    list-style-type: none;
+    /* padding: 0.5em; */
+    /* position:sticky; */
+    /* top: 80px; */
+    /* top: 0; */
+    /* height: 90px; */
+    /* justify-items: center; */
+    /* display: inline-block; */
+}
+
+.contenido .indice a{
+/* dt{ */
+    text-decoration: none;
+    color: var(--color-fondo-y-letra-blanco);
+    /* color: var(--color-fondo1); */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    /* color: var(--color-fondo-y-letra-blanco); */
+    /* color: var(--color-letra-azul-claro); */
+    font-size: 1.3rem;
+    /* font-size: 1.15rem; */
+    line-height: 50px;
+    /* font-size: 0.9rem; */
+    font-weight: bold;
+    padding: 0 0.9em;
+}
+
+.caja__separador{ /* revisar esto  */
+    /* background-color: var(--color-fondo3);   */
+    /* lo coloco para q quede sobre los otros elementos, así no se usa z-index */
+    /* height: 100%; */
+    /* height: 22vh; */
+    position: sticky;
+    /* top: 30vh; */
+    /* top: 10vh; */
+}
+
+.separador__glosario--glosario{
+    width: 61%;
+    /* height: 10px; */
+    /* border: 0; */
+    border-bottom: 3px solid var(--color-fondo2);
+    /* background-color: #DFF6FF; */
+    /* background-color: var(--color-fondo3); */
+    margin: 0 auto 3.5rem auto;
+    /* padding: 0 auto 5em auto; */
+    position: sticky;
+    top: 45vh; /* ojo no quitar xq funciona en movil y landscape para dejar fijo el separador */
+    /* z-index: 1; */
+}
+/* <!-- **** Fin Índice **** --> */
+
+/* <!-- **** Inicio caja con términos **** --> */
+.contenedor__contenido--acordiones{
+/* .contenido{ */
+    /* background: var(--color-fondo3); */
+/* } */
+}
+
+dl{
+    width: 80%;
+    margin: 1rem auto;
+    /* background-color: cornflowerblue; */
+    /* position: sticky;
+    top: 35vh; */
+    color: var(--color-fondo-y-letra-blanco);
+    /* color: var(--color-letra-azul-claro); */
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    /* text-align: left; */
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+    /* z-index: 1; */
+}
+
+/* 🎯🎯🎯🎯🎯 */
+
+
+
+
+
+
+/* corregir = 🔻🔻🔻🔻🔻 */
+.xdt{
+    font-weight: 950;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    padding: 0.25rem 0 0.25rem 1rem;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    background-color: aquamarine;
+    /* color: whitesmoke; */
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); */
+    /* position: fixed; */
+    /* position: sticky; */
+    /* z-index:-1; */
+    /* top: 0.27rem; */
+    /* position: fixed; */
+    /* top: 47vh; */
+    /* position: sticky; */
+}
+
+.xdd{
+    font-size: 1.2rem;
+    border-top: 1px solid cornsilk;
+    padding: 0.25rem 2rem 0.25rem 4rem;
+}
+
+/* .Xcontenedor__acordiones{ */
+.concepto__acordion x.contenido__unico{
+    background-color: aquamarine;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* right: 0; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-items: center; */
+    /* height: 30vh; */
+    /* position: sticky; */
+    margin: 1px auto;
+}
+
+.xconcepto__acordion{
+    background-color:coral;
+    padding: 1px auto;
+    /* width: clamp(45vh, 50vh, 150vh); */
+    /* width: 45vh; no colocar*/
+    overflow: hidden;
+    padding: auto 8em;
+    text-align: center;
+    position: sticky;
+    top: 22.5rem;
+    /* height: 50vh; */
+    /* justify-content: center; */
+} 
+
+.dt{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0.25rem 1.5rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    /* position: fixed; */
+    position: sticky;
+    top: 25rem;
+}
+
+.xdd{
+    font-size: 1.2rem;
+    border-top: 1px solid cornsilk;
+    padding: 0.25rem 2rem 0.25rem 4rem;
+}
+
+.xseparador__glosario--glosario{
+    top: 25vh;
+}
+
+
+/* 🎯🎯🎯🎯🎯 */
+.letra{ /* dt */
+    /* position: sticky;
+    top: 1px; */
+    /* color: var(--color-fondo-y-letra-blanco); */
+    color: var(--color-letra-azul-claro);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    text-align: left;
+    /* font-weight: bold; */
+    padding: 1em 0 1.5em 0;
+    z-index:-1;
+}
+
+.acceso__etiqueta{
+    /* position: sticky;
+    top: 1px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em 1em 1em;
+    /* padding: 1em; */
+    /* background: #1363DF; */
+    background: var(--color-fondo2);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border-bottom: 1px solid;
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.acceso__etiqueta:hover{
+    /* background: #47B5FF; */
+    background: var(--color-footer1);
+}
+
+.acceso__etiqueta::after{
+    /* content: ">"; */
+    width: 1em;
+    height: 1em;
+    /* text-align:right; */
+    transition: all 0.6s ease;
+    transform: rotate(90deg);
+    /* color: var(--color-footer1) */
+    /* color: var(--color-fondo-y-letra-blanco); */
+     /* este lo coloqué para aparecer la línea */
+    /* color:#b61111; */
+}
+
+.acceso__concepto{
+    max-height: 0;
+    padding: 0 1em;
+    /* color: #2c3e50; */
+    /* color:var(--color-fondo-y-letra-blanco); */
+    color: var(--color-fondo-y-letra-negro);
+    background: var(--color-fondo-y-letra-gris-2);
+    /* background: #DFF6FF; */
+    font-size: 1.1rem;
+    /* font-weight: 400; */
+    word-spacing: 0.3em;
+    transition: all 0.4s ease;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input:checked + .acceso__etiqueta::after{
+    transform: rotate(-90deg);
+}
+
+input:checked ~ .acceso__concepto{
+    max-height: 100vh;
+    padding: 1em;   
+/* aquí no se extiende mas grande el acordion} */
+}
+/***** Fin contenido *****/
+/* 🔺🔺🔺🔺🔺 */
+
+
+
+
+
+
+
+
+/* 🎯🎯🎯🎯🎯 */
+/* Inicio Footer Movil */
+.pie__contenedor--glosario{
+    background-color: #222222;
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision__box--glosario{
+    width: 90%;
+    text-align: justify;
+    padding: 3rem auto;
+}
+
+.mision__glosario{
+    color: var(--color-fondo1);
+    /* padding: 1rem; */
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: clamp(1.4em, 1.5vw, 1.6em);
+
+    /* font-size: 1.7rem; */
+    /* font-size: clamp(1.4em, 1.6vw, 1.8em); */
+    padding: 4rem 1rem 0 1rem;
+}
+
+.terminos__glosario{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.terminos__y--profe--glosario{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--color-letra-amarillo);
+}
+
+.terminos__de--servicio--glosario, .profe__que--glosario{
+    padding: 2em 0;
+    font-size: 1.4rem;
+    /* font-size: clamp(1.1em, 1.1vw, 1.5em); */
+    text-decoration: none;
+    text-align: center;
+}
+
+.terminos__de--servicio--glosario:hover,
+.terminos__de--servicio--glosario:active{
+    color: var(--color-fondo3);
+    transform: rotate(-2deg); /* rota la palabra */
+}
+
+.profe__que--glosario span:hover,
+.profe__que--glosario span:active{
+    color: var(--color-fondo-y-letra-blanco);
+    transform: rotate(-2deg); /* rota la palabra */
+    /* font-weight: 600; */
+}
+
+.terminos__de--servicio--glosario{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.profe__que--glosario{
+    color: var(--color-fondo3);
+    padding-top: 3em;
+}
+
+.terminos__creative--glosario{
+    /* width: 90%; */
+    font-size: 0.69rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.terminos__creative--glosario p{
+    font-weight: 200;
+    /* letter-spacing: 0.1rem; */
+    color: var(--color-fondo-y-letra-gris);
+    padding-bottom: 4rem;
+}
+
+.terminos__creative--glosario a{
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+}
+
+.terminos__creative--glosario img{
+    width: 8em;
+}
+
+.terminos__creative--glosario a:hover,
+.terminos__creative--glosario a:active{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.audiovisual__box--glosario{
+    width: 90%;
+    text-align: center;
+    border-top: solid 1px var(--color-footer2);
+    padding-bottom: 2rem;
+}
+
+.audiovisual__texto--glosario{
+    padding: 1.5rem 0 1rem 0;
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-gris);
+    opacity: 0.9;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.audiovisual__texto--glosario span{
+    /* font-size: 1.2rem; */
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+.audiovisual__box--glosario a{
+    text-decoration: none;
+}
+
+.audiovisual__total--glosario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.audiovisual__instagram--glosario span{
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bold;
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* opacity: 0.5; */
+}
+
+.audiovisual__instagram--glosario span:hover,
+.audiovisual__instagram--glosario span:active{
+    color: var(--color-letra-amarillo);
+}
+/* Fin Footer Movil */
+
+
+
+@media screen and (min-width: 767px){
+/* <!-- **** Inicio Índice **** --> */
+/* 🎯🎯🎯🎯🎯 */
+
+/* 🔻🔻🔻🔻🔻 */
+.Xdl{
+    width: 80%;
+    margin: 1rem auto;
+    /* margin: 1rem; */
+    /* background-color: cornflowerblue; */
+    /* color: cornsilk; */
+}
+
+.Xdt{
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 0.25rem 1.5rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    /* position: fixed; */
+    position: sticky;
+    /* top: 25rem; */
+}
+
+.Xdd{
+    font-size: 1.2rem;
+    border-top: 1px solid cornsilk;
+    padding: 0.25rem 2rem 0.25rem 4rem;
+}
+/* 🔺🔺🔺🔺🔺 */
+
+
+/* 🎯🎯🎯🎯🎯 */
+.xseparador__glosario--glosario{
+    top: 25vh;
+}
+
+/* Inicio Sub-sección CSS glosario - círculos*/
+.contenedor__glosario{ /* se deja solamente este código desde 767px xq en estilosIndex.css se tiene el de 766px hacia abajo */
+    padding: 0 0 10px 0;
+    min-height: 110vh;
+}
+
+.partes__glosario .texto__circulo{ /* círculo morado con texto */
+    top: 16em;
+    left: 6em;
+    width: 16.5em;
+    height: 16.5em;
+}
+
+.partes__glosario .texto__circulo h6{ /* letras de tienes dudas con... */
+    font-size: 1.3em;
+    margin-top: 3.5em; 
+    margin-bottom: 2em;
+}
+
+.partes__glosario .texto__circulo a{   /* forma botón entra aquí  */
+    font-size: 1.1em;
+}
+
+/*** colocado para pantallas sin cursor-celulares ***/
+.partes__glosario .texto__circulo a:hover{
+    border: 2px var(--color-fondo-y-letra-blanco) solid;
+    color:  var(--color-fondo2);
+    background: var(--color-fondo-y-letra-blanco);
+}
+
+/* Parte 3     */
+/* Ajustar el texto deentro del circulo usando gradient radial con un valor afuera */
+.contenedor__glosario .texto__circulo span:before, span:after{ 
+    /* content: ""; */
+    width: 45%;
+    height: 95%;
+}
+ 
+.texto__circulo span:before{ 
+    /* flota: left; */
+    shape-outside: radial-gradient(
+        farthest-side at 105%,
+        transparent 105%,
+        #fff);
+}
+
+.texto__circulo span:after{
+    /* float: right; */
+    shape-outside: radial-gradient(
+        farthest-side at 1%,
+        transparent 101%,
+        #fff);
+}
+
+/* Parte 4 */
+/* Imagen ppal con círculo */
+.partes__glosario .imgagen{
+    width: 27.5em;
+    height: 27.5em;
+    /* border-radius: 50%; */
+    /* background: url(../recursos/img/imgGlosario.jpg) no-repeat center; */
+    /* background-size: cover; */
+    /* animation: float 5.5s infinite ease-in-out; */
+}
+    
+/* Parte 5 */
+/* Circulo y aro */
+.partes__glosario .circulo{
+    left: -95px;
+    width: 66%;
+    height: 66%;
+}
+    
+.container__glosario .partes__glosario .aro{
+    top: -4.5em;
+    right: -85px;
+    border: 20px var(--color-fondo4) solid;
+    width: 66%;
+    height: 66%;
+    }
+/***** Fin Sub-sección Glosario CSS *****/
+/* 🎯🎯🎯🎯🎯 */
+
+
+
+
+/* 🔻🔻🔻🔻🔻 */
+/***** Inicio contenido *****/
+.xcontenido .indice{
+    height: 20vh;
+}
+
+.xcontenido .indice a{
+        font-size: 1.3rem;
+    }
+    
+/* .separador__glosario--glosario{ */
+    /* width: 61%; */
+    /* margin: 0 auto 3.5rem auto; */
+    /* top: 25vh; */
+/* } */
+
+.xconcepto__acordion{
+    top: 7rem;
+}
+/* 🔺🔺🔺🔺🔺🔺 */
+
+.xcontenido{
+    height: 18vh; /* da la distancia adecuada en landscape entre indice y separador */
+}
+
+/* .caja__separador{  */
+    /* height: 18vh; */
+    /* top: 18vh; */
+/* } */
+
+/* 🎯🎯🎯🎯🎯 */
+/* Inicio Footer Landscape */
+.pie__contenedor--glosario{
+    height: 70vh;    /* el alto difiere de las otras páginas que están en 90vh */
+    }
+
+.mision__box--glosario{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 3rem 0;
+    }
+
+.mision__glosario{
+    padding: 1rem;
+    font-size: clamp(1.2em, 1.8vw, 2.1em);
+    }
+
+.terminos__y--profe--glosario{
+    flex-direction: row;
+    margin: 1rem 0;
+    }
+
+.terminos__de--servicio--glosario, .profe__que--glosario{
+    padding: 1em;
+    font-size: 1.5rem;
+    }
+
+.terminos__creative--glosario{
+    width: 70%;
+    font-size: 0.79rem;
+    }
+
+.terminos__creative--glosario p{
+    padding-bottom: 0.1rem;
+    }
+
+
+.terminos__creative--glosario img{
+    width: 7em;
+    }
+
+.audiovisual__box--glosario{
+    width: 70%;
+    padding-bottom: 0.5rem;
+    }
+
+.audiovisual__total--glosario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/***** Fin Footer Landscape *****/
+
+/* 🎯🎯🎯🎯🎯 */
+}
+
+
+
+
+/* @media all and (max-width: 333px){ */
+    /* .corte__palabra{ */
+        /* text-align: left; */
+        /* word-break: break-all; */
+    /* } */
+
+
+    /* ## el siguiente es una prueba para subir Aviso Legal en mobile */
+    /* .enunciados__legales-1{
+        padding-top: -2em;
+    } */
+
+    /* .listado__termino--fondo{ */
+        /* margin-left: -0.1rem; */
+         /* ojo verificar si se movió a la izq */
+    /* } */
+
+    /* .enunciados__legales--aviso{ */
+        /* margin-top: 50px; */
+        /* padding-top: 150px; */
+    /* } */
+
+    /* .enunciados__legales--cookies{
+        padding-top: 300px;
+    }
+
+    .enunciados__legales--privacidad{
+        padding-top: 300px;
+    }
+
+    .enunciados__legales--descargo{
+        padding-top: 300px;
+    }
+} */
+
+/* .contenedor__legales{ */
+    /* max-width: 98%; */
+    /* min-width: none; */
+    /* display: grid; */
+    /* gap: 10px; */
+    /* grid-template: 
+    "terminos" 50px
+    "aviso" 100px
+    "cookies" 100px
+    "privacidad" 100px
+    "descargo" 100px; */
+    /*no funciona el grid*/
+    /* background: rgb(115, 230, 176); */
+    /* grid-column: 2; */
+    /* grid-row: 1/-1; */
+    /* align-self:flex-start; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: auto auto; */
+/* } */
+
+
+    /*.listado__termino--caja{
+        position: sticky;
+        top: 0;
+        height: 150px;
+        grid-area: terminos;
+        background: var(--color-fondo3);
+        margin-left: -1.8rem;
+        padding: 1rem;
+    }
+    
+    .enunciados__legales--aviso{
+        grid-area: aviso;
+        margin: -1rem 1rem 1rem;
+    }
+    
+    .enunciados__legales--cookies{
+        grid-area: cookies;
+        margin: -1rem 1rem 1rem;
+    }
+    
+    .enunciados__legales--privacidad{
+        grid-area: privacidad;
+        margin: -1rem 1rem 1rem;
+    }
+    
+    .enunciados__legales--descargo{
+        grid-area: descargo;
+        margin: -1rem 1rem 1rem;
+    }
+}     */
+ 
+
+
+/* @media screen and (min-width: 575px) {
+    .card{
+        width: 25em;
+        height: 15em;
+}
+} */
+ /* ajusta la foto al tamaño del cuadrado */
+
+/*    .card .overlay{
+        font-size: 1.5em;
+    }
+    .nav__header-logo{
+        font-size: 1.2rem;
+        padding: 1.3em 0 0 2em;
+    }
+    .enunciados__legales{
+        padding: 2em 5em 0 4.5em;
+    }
+    .enunciados__legales p{
+        font-size: 1.6rem;
+    }
+    } */
+
+
+/* @media all and (max-width: 383px){ */
+    /* .contenedor__legales{
+        display: flex;
+        flex-direction: column;
+        } */
+
+    /* .enunciados__h1{
+        text-align: center;
+    }
+ */
+    /* .listado__termino--fondo{ */
+        /* height: 120px; */
+        /* margin-left: 0.1rem; */
+    /* } */
+/* }     */
+
+
+
+/* @media all and (max-width: 599px){
+    .contenedor__legales{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enunciados__h1{
+        font-size: 5vmax;
+    }
+
+    .enunciados__borde--color{
+        border-left: 0;
+    }
+    
+    .listado__terminos--fondo{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+ */
+    /* .enunciados__legales--aviso{ */
+        /* margin-top: 50px; */
+        /* padding-top: 250px; */
+    /* } */
+
+    /* .enunciados__legales--cookies{
+        padding-top: 250px;
+    }
+
+    .enunciados__legales--privacidad{
+        padding-top: 250px;
+    }
+
+    .enunciados__legales--descargo{
+        padding-top: 250px;
+    }
+}
+ */
+
+    /* para la vista de tablets */
+/* @media (min-width: 600px) {
+.card__legal{  */
+    /* tamaño y posición de la imagen del mazo */
+        /* object-fit: cover; */
+        /* object-position: center; */
+        /* width: 45rem; */
+        /* height: clamp(10rem, 20rem, 20rem); */
+        /* height: 20rem; */
+/* } */
+
+/* .contenedor__legales{ */
+    /* display: grid; */
+    /* gap: 10px; */
+    /* grid-template:  */
+    /* "terminos aviso" auto
+    "terminos cookies" auto
+    "terminos privacidad" auto
+    "terminos descargo" auto 
+    / 330px auto; */
+    /*no funciona el grid*/
+    /* background: rgb(115, 230, 176); */
+    /* grid-column: 2; */
+    /* grid-row: 1/-1; */
+    /* align-self:flex-start; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: auto auto; */
+/* }
+} */
+
+
+
+/* para la vista de escritorio */
+/* @media (min-width: 900px) { */
+/* .card__legal{ */
+     /* tamaño y posición de la imagen del mazo */
+    /* object-fit: cover;
+    object-position: center;
+    width: 60rem;
+    height: clamp(10rem, 20rem, 20rem);
+    height: 22rem;  } */
+
+/* .contenedor__legales{
+    grid-template: 
+    "terminos aviso aviso" auto
+    "terminos cookies cookies" auto
+    "terminos privacidad privacidad" auto
+    "terminos descargo descargo" auto 
+    / 375px auto auto;
+} */
+/* } */
+
+/* @media all and (min-width: 550px){
+    .card{
+        width: 19em;
+        height: 11em;
+    }
+    .card .overlay{
+        font-size: 4vmax;
+    }
+}
+
+@media all and (min-width: 750px){
+    .card{
+        width: 35em;
+    }
+} */
+
+/* el cuadro superior donde esta la pabras en amarilo se ensancha con 750px y no oye las dmas intsrucciones */
+        /* height: 20em;
+    }
+    .card .overlay{
+        font-size: 4.5vmax;
+    }
+}
+    }
+
+@media all and (min-width: 950px){
+    .card{
+        width: 35m;
+        height: 20em;
+    }
+    .card .overlay{
+        font-size: 5vmax;
+    }
+}
+
+@media all and (min-width: 1400px){
+    .card{
+        width: 60em;
+        height: 20em;
+    }
+    .card .overlay{
+        font-size: 5.5vmax;
+        margin: 0.35em;
+         /* OJO verificar si funciona esta regla en el centrado vertical del título que está en amarillo */
+    /* } */
+/* }  */
+
+
+/* .enunciados__enumerados{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase; 
+    margin-bottom: 0.3em;
+} */
+
+
+/* Diseño para tabletas */ 
+/* @media screen and (min-width: 767px) {
+    .card{
+        width: 32em;
+        height: 19em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 1.9em;
+    }
+    .enunciados__legales{
+        padding: 2em 6em 0 5.5em;
+    }
+} */
+
+
+/* @media screen and (min-width: 990px) {
+    .card{
+        width: 40em;
+        height: 25em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 2.4em;
+    }
+    .nav__header-logo{
+        font-size: 1.5rem;
+        padding: 1.3em 0 0.2em 2em;
+        font-family:  'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;;
+    }
+    .enunciados__legales{
+        padding: 0.8em 2.2em 0 2em;
+        font-size: 1.5em;
+    }
+    .enunciados__legales p{
+        font-size: 1.7rem;
+    }
+} */
+
+/* OJO REVISAR */
+/* @media screen and (max-width: 1055px) and (max-width: 1119){ 
+    .card{
+        width: 42em;
+        height: 26em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 2.6em;
+    }
+    .nav__header-logo{
+        font-size: 1.5rem;
+        padding: 1.4em 0 0.3em 2em;
+    }
+    .enunciados__legales{
+        padding: 0.9em 2.2em 0 2em;
+        font-size: 1.5em;
+    }
+    .enunciados__legales p{
+        font-size: 1.8rem;
+    }
+}  */
+
+/* Diseño para laptops */ 
+/* @media screen and (min-width: 1120px) {
+    .card{
+        width: 47em;
+        height:28em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 2.8em;
+    }
+    .nav__header-logo{
+        font-size: 1.6rem;
+        padding: 1.5em 0 0.5em 2.3em;
+    }
+    .enunciados__legales{
+        padding: 1em 5.6em 0 5.5em;
+    }
+    .enunciados__legales p{
+        font-size: 1.8rem;
+    }
+} */
+
+/* Diseño para desktops */ 
+/* @media screen and (min-width: 1240px) {
+    .card{
+        width: 49em;
+        height: 29.5em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 3em;
+    }
+    .nav__header-logo{
+        font-size: 1.7rem;
+        padding: 1.4em 0 0.5em 2.4em;
+    }
+    .enunciados__legales{
+        padding: 2.8m 5.3em 0 5.3em;
+    }
+    .enunciados__legales p{
+        font-size: 1.9rem;
+    }
+} */
+
+
+/* Diseño para desktops XL */ 
+/* @media screen and (min-width: 1366px) {
+    .card{
+        width: 53em;
+        height: 30em; 
+} ajusta la foto al cuadrado
+    .card .overlay{
+        font-size: 3.3em;
+    }
+    .nav__header-logo{
+        font-size: 1.8rem;
+        padding: 1.5em 0 0.4em 2.6em;
+    }
+    .enunciados__legales{
+        padding: 2.9m 6.2em 0 6.1em;
+    }
+} */
+
+/* #btn-mas{
+    display: none;
+} */
+
+/* .container{
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+} */
+
+/* .redes a, .icon-mas2{
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    text-decoration: none;
+    background: var(--color-fondo2);
+    color: var(--color-fondo1);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+} */
+
+/* .redes a:hover{
+    background: var(--color-fondo1);
+    color: var(--color-letra-titulo);
+} */
+
+/* .redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+/* #btn-mas:checked ~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+} */
+
+/* .icon-mas2 {
+    cursor: pointer;
+    background: var(--color-fondo1);
+    font-size: 1.2rem;
+    color: var(--color-letra-titulo);
+    font-weight: bold;
+} */
+
+/* #btn-mas:checked ~ .btn-mas .icon-mas2{
+    transform: rotate(45deg);
+    font-size: 1.2rem;
+    font-weight: bold;
+} */

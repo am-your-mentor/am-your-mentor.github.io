@@ -1,0 +1,343 @@
+/* Inicio página Blog Movil */
+/***** Inicio Cabecera Contacto *****/
+.cabecera__contacto{
+    min-height: 100vh;
+    background: var(--color-fondo2);
+    /* min-height: calc(100% + 10vh); */
+    /* min-height: clamp(95vh, 110vh, 120vh); */
+    /* background: #000; */
+    /* width: fit-content min(100%, max(500px, 100%)); */
+    /* min-width: 100%; */
+    /* min-height: clamp(85vh, 98vh, 120vh); */
+    padding-bottom: 2em;    
+}
+
+.xlogo__nav--contacto{
+    padding: 0.63rem 0 0 0.75rem; 
+    /* padding: 1.25rem 0 0 1.5rem; */
+    /*em toma al padre más cercano, rem toma al root o body */
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bolder;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo__nav--contacto{
+    padding: 0.63rem 0 0 0.75rem; 
+     /*em toma al padre más cercano, rem toma al root o body */
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bold;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/***** Culmina Cabecera Contacto *****/
+
+/***** Inicio Cabecera del formato *****/
+.forma__contacto{
+    height: 2em;
+    color: #FFF;
+    font-size: clamp(2rem, 3.2vw, 3.5rem); /* permite adaptar 3 tamaños de font en el viewport */
+    /* font-size: 2em; */
+    font-weight: bold;
+    padding: 1em 0 2em 0;
+    text-align: center;
+}
+
+.forma{
+    background: var(--color-fondo1);
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 1em;
+    padding: 2.3em 1.5em;
+}
+
+.forma__container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+
+}
+.forma__title{
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.forma__input{
+    font-family:  'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 1.5em 1em;
+    outline: none;
+    border: none;
+    border: 3px solid var(--color-fondo3);
+    border-radius: 0.2em;
+}
+
+/* .forma__borde--enviar{
+border: 3px solid var(--color-fondo-y-letra-negro);
+} */
+
+.forma__input--message{
+    resize: none;
+    padding: 1.5em 1em;
+    margin-bottom: 1.5em;
+}
+
+.forma__cta{
+    font-family:  inherit;
+    border-radius: 20px;
+    /* text-decoration: none; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 15px 15px 15px 10px;
+    background-color: var(--color-fondo3);
+    /* color: var(--color-fondo-y-letra-negro); */
+    /* border: none; */
+     /* quita el border sombreado que viene por defecto */
+    /* border: 3px solid var(--color-fondo-y-letra-negro); */
+    border: 3px var(--color-fondo-y-letra-blanco) solid;
+    width: 40%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.forma__cta:hover,
+.forma__cta:active{
+    /* border: 2px solid var(--color-fondo-y-letra-gris); */
+    border: 3px solid var(--color-fondo-y-letra-negro);
+    color:  var(--color-fondo2); 
+    background: var(--color-fondo1);
+}
+
+
+.contenido__contacto{
+    background-color: aqua;
+    height: 70vh;
+}
+/* Culmina cabecea del formato */
+
+/* Inicio Footer Movil */
+.pie__contenedor--contacto{
+    background-color: #222222;
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision__box--contacto{
+    width: 90%;
+    text-align: justify;
+    padding: 3rem auto;
+}
+
+.mision__contacto{
+    color: var(--color-fondo1);
+    /* padding: 1rem; */
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: clamp(1.4em, 1.5vw, 1.6em);
+    /* font-size: 1.7rem; */
+    padding: 4rem 1rem 0 1rem;
+}
+
+.terminos__contacto{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.terminos__y--profe--contacto{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--color-letra-amarillo);
+}
+
+.terminos__de--servicio--contacto, .profe__que--contacto{
+    padding: 2em 0;
+    font-size: 1.4rem;
+    /* font-size: clamp(1.1em, 1.1vw, 1.5em); */
+    text-decoration: none;
+    text-align: center;
+}
+
+.terminos__de--servicio--contacto:hover,
+.terminos__de--servicio--contacto:active{
+    color: var(--color-fondo3);
+    transform: rotate(-2deg); /* rota la palabra */
+}
+
+.profe__que--contacto span:hover,
+.profe__que--contacto span:active{
+    color: var(--color-fondo-y-letra-blanco);
+    transform: rotate(-2deg); /* rota la palabra */
+    /* font-weight: 600; */
+}
+
+.terminos__de--servicio--contacto{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.profe__que--contacto{
+    color: var(--color-fondo3);
+    padding-top: 3em;
+}
+
+.terminos__creative--contacto{
+    /* width: 90%; */
+    font-size: 0.69rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.terminos__creative--contacto p{
+    font-weight: 200;
+    /* letter-spacing: 0.1rem; */
+    color: var(--color-fondo-y-letra-gris);
+    padding-bottom: 4rem;
+}
+
+.terminos__creative--contacto a{
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+}
+
+.terminos__creative--contacto img{
+    width: 8em;
+}
+
+.audiovisual__box--contacto{
+    width: 90%;
+    text-align: center;
+    border-top: solid 1px var(--color-footer2);
+    padding-bottom: 2rem;
+}
+
+.audiovisual__texto--contacto{
+    padding: 1.5rem 0 1rem 0;
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-gris);
+    opacity: 0.9;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.audiovisual__texto--contacto span{
+    /* font-size: 1.2rem; */
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+.audiovisual__box--contacto a{
+    text-decoration: none;
+}
+
+.audiovisual__total--contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.audiovisual__instagram--contacto span{
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bold;
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* opacity: 0.5; */
+}
+
+.audiovisual__instagram--contacto span:hover,
+.audiovisual__instagram--contacto span:active{
+    color: var(--color-letra-amarillo);
+}
+/* Fin Footer Movil */
+
+/* inicio adaptación del formato */
+@media screen and (min-width: 450px) {
+    .froma{
+        padding: 3.5em 1em;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .forma__cta{
+        width: 25%;
+}
+/* fin adaptación del formato */
+
+
+/* Inicio Footer Landscape */
+.pie__contenedor--contacto{
+    height: 90vh;
+    }
+
+.mision__box--contacto{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 3rem 0;
+    }
+
+.mision__contacto{
+    padding: 1rem;
+    font-size: clamp(1.2em, 1.8vw, 2.1em);
+    }
+
+.terminos__y--profe--contacto{
+    flex-direction: row;
+    margin: 1rem 0;
+    }
+
+.terminos__de--servicio--contacto, .profe__que--contacto{
+    padding: 1em;
+    font-size: 1.5rem;
+    }
+
+.terminos__creative--contacto{
+    width: 70%;
+    font-size: 0.79rem;
+    }
+
+.terminos__creative--contacto p{
+    padding-bottom: 0.1rem;
+    }
+
+
+.terminos__creative--contacto img{
+    width: 7em;
+    }
+
+.audiovisual__box--contacto{
+    width: 70%;
+    padding-bottom: 0.5rem;
+    }
+
+.audiovisual__total--contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+}
+/***** Fin Footer Landscape *****/

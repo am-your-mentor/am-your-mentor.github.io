@@ -1,0 +1,73 @@
+/* .container{
+    max-width: 500px;
+    margin: 0 auto;
+} */
+
+@keyframes spin1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+
+    }
+}
+
+.loader{
+    position: fixed;
+    display: flex;
+    align-items: center; /* vertical */
+    justify-content: center; /* horizontal */
+    /* background-color: var(--color-letra-azul-oscuro); */
+    /* background-color: var(--color-letra-azul-claro); */
+    /* background-color: var(--color-fondo1); */
+    background-color: var(--color-fondo1);
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+}
+
+.loader div:nth-child(1){
+    position: absolute;
+    border: 18px solid transparent;
+    border-bottom-color: var(--color-fondo2);
+    border-right-color: var(--color-fondo2);
+    height: 15rem;
+    width: 15rem;
+    /* rem toma la unidad de medida del body. los em usan la unidad del padre (selector = .loader) anterior */
+    border-radius: 50%;
+    animation: spin1 3s linear infinite;
+}
+
+.loader div:nth-child(2){
+    position: absolute;
+    border: 18px solid transparent;
+    border-top-color: var(--color-fondo3);
+    border-left-color: var(--color-fondo3);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    animation: spin2 2s linear infinite;
+
+}
+
+.loader div:nth-child(3){
+    position: absolute;
+    border: 18px solid transparent;
+    border-top-color: var(--color-fondo-y-letra-blanco);
+    border-left-color: var(--color-fondo-y-letra-blanco);
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    animation: spin1 1s linear infinite;
+}

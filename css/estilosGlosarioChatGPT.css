@@ -1,0 +1,571 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .cabecera__glosario{
+    min-height: 100vh;
+    }
+
+.logo__nav--glosario{
+    padding: 1.25rem 0 0 1.5rem;
+    font-size: clamp(1.3rem, 2.9vw, 2rem);
+    font-weight: bolder;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    background: var(--color-fondo3);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container_glosario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-fondo3);
+}
+
+.partes_glosario{
+    position: relative;
+}
+
+.partes_glosario .text-circle{ 
+    position: absolute;
+    top: 10em;
+    left: 3em;
+    padding: 2em 0;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 50%;
+    background: var(--color-fondo2);
+    text-align: center;
+    animation: float 4.4s infinite ease-in-out;
+}
+
+.partes_glosario .text-circle h6{ 
+    font-size: 1em;
+    margin-top: 1.6em; 
+    margin-bottom: 0.7em;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.partes_glosario .text-circle a{  
+    border: 2px var(--color-fondo-y-letra-blanco) solid;
+    color: var(--color-letra-amarillo);
+    padding: 0.6em;
+    font-size: clamp(0.85em, 1.2vw, 1.4em);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.container_glosario .text-circle span:before, span:after{ 
+    content: "";
+    width: 25%;
+    height: 100%;
+}
+
+.text-circle span:before{ 
+    float: left;
+    shape-outside: radial-gradient(
+        farthest-side at 100%,
+        transparent 100%,
+        #fff);
+}
+
+.text-circle span:after{
+    float: right;
+    shape-outside: radial-gradient(
+        farthest-side at 0%,
+        transparent 100%,
+        #fff);
+}
+
+.partes_glosario .img{
+    width: 15.5em;
+    height: 15.5em;
+    border-radius: 50%;
+    background: url(../img/imgGlosario.jpg) no-repeat center; 
+    background-size: cover;
+    animation: float 5.5s infinite ease-in-out;
+}
+
+.partes_glosario .circle{
+    position: absolute;
+    left: -25px;
+    width: 65%;
+    height: 65%;
+    z-index: 0;
+    border-radius: 50%;
+    animation: float 5s infinite ease-in-out;
+    background: var(--color-fondo1);
+}
+
+.container_glosario .partes_glosario .ring{
+    position: absolute;
+    top: -4em;
+    right: -1.5px;
+    border: 15px var(--color-fondo4) solid;
+    width: 65%;
+    height: 65%;
+    z-index: 0;
+    border-radius: 50%;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float{
+    50% {
+        transform: translateY(-1em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#articulos{
+    color: var(--color-fondo3);
+}
+
+.contenedor__contenido{
+    background: var(--color-fondo3);
+    height: 1000vh;
+}
+
+.contenido{
+    padding: 1px auto;
+    position: sticky;
+    top: 0;
+    height: 30vh;
+    display: flex; /* ChatGPT */
+    flex-direction: column ; /* ChatGPT */
+}
+
+.contenido .indice{
+    display: flex;
+    padding: 1.5em 0;
+    justify-content: center;
+    height: 70vh;
+    z-index: 1;
+}
+
+.contenido .indice ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido .indice li{
+    list-style-type: none;
+}
+
+.contenido .indice a{
+    text-decoration: none;
+    color: var(--color-fondo1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 0 0.9em;
+}
+
+.separador__glosario--glosario{
+    width: 61%;
+    height: 5px; /* ChatGPT */
+    border-bottom: 3px solid var(--color-fondo2);
+    background-color: var(--color-fondo3);
+    margin: 0 auto 3.5rem auto;
+    position: sticky;
+    top: 55vh;
+    z-index: 1;
+}
+
+
+.contenedor__acordiones{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 1px auto;
+}
+
+.separa{
+    padding: 1em 0;
+    color: var(--color-fondo3);
+}
+
+.concepto__acordion{
+    padding: 1px auto;
+    overflow: hidden;
+    padding: auto 8em;
+    text-align:center;
+    position: sticky;
+    top: 22.5rem;
+} 
+
+.letra{
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    padding: 1em 0 1.5em 0;
+}
+
+.dt{
+    background-color: aquamarine;
+}
+
+.acceso__label{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em 1em 1em;
+    background: var(--color-fondo2);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border-bottom: 1px solid;
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+
+.acceso__label:hover{
+    background: var(--color-footer1);
+}
+
+.acceso__label::after{
+    content: ">";
+    width: 1em;
+    height: 1em;
+    transition: all 0.6s ease;
+    transform: rotate(90deg);
+}
+
+.acceso__concepto{
+    max-height: 0;
+    padding: 0 1em;
+    color:var(--color-fondo-y-letra-blanco);
+    background: var(--color-fondo-y-letra-gris-2);
+    font-size: 1.1rem;
+    word-spacing: 0.3em;
+    transition: all 0.4s ease;
+    text-align: justify;
+    border-radius: 8px;
+}
+
+input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input:checked + .acceso__label::after{
+    transform: rotate(-90deg);
+}
+
+input:checked ~ .acceso__concepto{
+    max-height: 100vh;
+    padding: 1em;   
+}
+
+/* Inicio Footer Movil */
+.pie__contenedor--glosario{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision__box--glosario{
+    width: 90%;
+    text-align: justify;
+    padding: 3rem auto;
+}
+
+.mision__glosario{
+    color: var(--color-fondo1);
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: clamp(1.4em, 1.5vw, 1.6em);
+    padding: 4rem 1rem 0 1rem;
+}
+
+.terminos__glosario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terminos__y--profe--glosario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--color-letra-amarillo);
+}
+
+.terminos__de--servicio--glosario, .profe__que--glosario{
+    padding: 2em 0;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.terminos__de--servicio--glosario:hover,
+.terminos__de--servicio--glosario:active{
+    color: var(--color-fondo3);
+    transform: rotate(-2deg); /* rota la palabra */
+}
+
+.profe__que--glosario span:hover,
+.profe__que--glosario span:active{
+    color: var(--color-fondo-y-letra-blanco);
+    transform: rotate(-2deg); /* rota la palabra */
+    /* font-weight: 600; */
+}
+
+.terminos__de--servicio--glosario{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.profe__que--glosario{
+    color: var(--color-fondo3);
+    padding-top: 3em;
+}
+
+.terminos__creative--glosario{ /*parece q no funciona, x eso se repite la funcion font-size en creative__texto*/
+    font-size: 0.69rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.terminos__creative--glosario p{
+    font-weight: 200;
+    color: var(--color-fondo-y-letra-gris);
+    padding-bottom: 4rem;
+}
+
+.terminos__creative--glosario a{
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+}
+
+.terminos__creative--glosario img{
+    width: 8em;
+}
+
+.creative__texto{
+    font-size: 0.79rem;
+    font-weight: 100;
+}
+
+.terminos__creative--glosario a:hover,
+.terminos__creative--glosario a:active{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.audiovisual__box--glosario{
+    width: 90%;
+    text-align: center;
+    border-top: solid 1px var(--color-footer2);
+    padding-bottom: 2rem;
+}
+
+.audiovisual__texto--glosario{
+    padding: 1.5rem 0 1rem 0;
+    color: var(--color-fondo-y-letra-gris);
+    opacity: 0.9;
+}
+
+.audiovisual__texto--glosario span{
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+.audiovisual__box--glosario a{
+    text-decoration: none;
+}
+
+/* .audiovisual__total--glosario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.audiovisual__instagram--glosario span{
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bold;
+}
+
+.audiovisual__instagram--glosario span:hover,
+.audiovisual__instagram--glosario span:active{
+    color: var(--color-letra-amarillo);
+}
+
+@media screen and (min-width: 767px){
+.container_glosario{ 
+    padding: 0 0 10px 0;
+    min-height: 110vh;
+}
+
+.partes_glosario .text-circle{
+    top: 16em;
+    left: 6em;
+    width: 16.5em;
+    height: 16.5em;
+}
+    
+.partes_glosario .text-circle h6{
+    font-size: 1.3em;
+    margin-top: 3.5em; 
+    margin-bottom: 2em;
+}
+    
+.partes_glosario .text-circle a{
+    font-size: 1.1em;
+}
+    
+.partes_glosario .text-circle a:hover{
+    border: 2px var(--color-fondo-y-letra-blanco) solid;
+    color:  var(--color-fondo2);
+    background: var(--color-fondo-y-letra-blanco);
+}
+    
+.container_glosario .text-circle span:before, span:after{ 
+    width: 45%;
+    height: 95%;
+}
+
+.text-circle span:before{ 
+    shape-outside: radial-gradient(
+        farthest-side at 105%,
+        transparent 105%,
+        #fff);
+}
+
+.text-circle span:after{
+    shape-outside: radial-gradient(
+        farthest-side at 1%,
+        transparent 101%,
+        #fff);
+}
+
+.partes_glosario .img{
+    width: 27.5em;
+    height: 27.5em;
+}
+
+.partes_glosario .circle{
+    left: -95px;
+    width: 66%;
+    height: 66%;
+}
+
+.container_glosario .partes_glosario .ring{
+    top: -4.5em;
+    right: -85px;
+    border: 20px var(--color-fondo4) solid;
+    width: 66%;
+    height: 66%;
+    }
+
+.contenido .indice{
+    height: 10vh;
+}
+
+.contenido .indice a{
+        font-size: 1.3rem;
+    }
+    
+/* .separador__glosario--glosario{ */
+/* } */
+
+.concepto__acordion{
+    top: 7rem;
+}
+
+/* Inicio Footer Landscape */
+.pie__contenedor--glosario{
+    height: 90vh;
+    }
+
+.mision__box--glosario{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 3rem 0;
+    }
+
+.mision__glosario{
+    padding: 1rem;
+    font-size: clamp(1.2em, 1.8vw, 2.1em);
+    }
+
+.terminos__y--profe--glosario{
+    flex-direction: row;
+    margin: 1rem 0;
+    }
+
+.terminos__de--servicio--glosario, .profe__que--glosario{
+    padding: 1em;
+    font-size: 1.5rem;
+    }
+
+.terminos__creative--glosario{
+    width: 70%;
+    font-size: 0.79rem;
+    }
+
+.terminos__creative--glosario p{
+    padding-bottom: 0.1rem;
+    }
+
+
+.terminos__creative--glosario img{
+    width: 7em;
+    }
+
+.audiovisual__box--glosario{
+    width: 70%;
+    padding-bottom: 0.5rem;
+    }
+
+.audiovisual__total--glosario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}

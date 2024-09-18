@@ -1,0 +1,318 @@
+.loader{
+    position: fixed;
+    /* display: flex; */
+    /* align-items: center; vertical */
+    /* justify-content: center; horizontal */
+    /* background-color: var(--color-letra-azul-oscuro); */
+    background-color: var(--color-fondo1);
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+
+    /* height: 120px; */
+    /* width: 1000px; */
+    /* border: 2px solid white; */
+    /* position: absolute; */
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.loader>span{
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 2px #262626;
+    animation: 8s infinite forwards linear;
+}
+
+span:nth-child(1){
+    animation-name: fill1;
+}
+
+@keyframes fill1{
+    5%{
+        color: transparent;
+    }
+    6.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(2){
+    animation-name: fill2;
+}
+
+@keyframes fill2{
+    10%{
+        color: transparent;
+    }
+    11.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(3){
+    animation-name: fill3;
+}
+
+@keyframes fill3{
+    15%{
+        color: transparent;
+    }
+    16.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(4){
+    animation-name: fill4;
+}
+
+@keyframes fill4{
+    20%{
+        color: transparent;
+    }
+    21.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(5){
+    animation-name: fill5;
+}
+
+@keyframes fill5{
+    25%{
+        color: transparent;
+    }
+    26.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(6){
+    animation-name: fill6;
+}
+
+@keyframes fill6{
+    30%{
+        color: transparent;
+    }
+    31.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(7){
+    animation-name: fill7;
+}
+
+@keyframes fill7{
+    35%{
+        color: transparent;
+    }
+    36.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(8){
+    animation-name: fill8;
+}
+
+@keyframes fill8{
+    40%{
+        color: transparent;
+    }
+    41.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(9){
+    animation-name: fill9;
+}
+
+@keyframes fill9{
+    45%{
+        color: transparent;
+    }
+    46.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(10){
+    animation-name: fill10;
+}
+
+@keyframes fill10{
+    50%{
+        color: transparent;
+    }
+    51.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(11){
+    animation-name: fill11;
+}
+
+@keyframes fill11{
+    55%{
+        color: transparent;
+    }
+    56.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(12){
+    animation-name: fill12;
+}
+
+@keyframes fill12{
+    60%{
+        color: transparent;
+    }
+    61.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(13){
+    animation-name: fill13;
+}
+
+@keyframes fill13{
+    65%{
+        color: transparent;
+    }
+    66.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(14){
+    animation-name: fill14;
+}
+
+@keyframes fill14{
+    70%{
+        color: transparent;
+    }
+    71.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(15){
+    animation-name: fill15;
+}
+
+@keyframes fill15{
+    75%{
+        color: transparent;
+    }
+    76.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(16){
+    animation-name: fill16;
+}
+
+@keyframes fill16{
+    80%{
+        color: transparent;
+    }
+    81.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(17){
+    animation-name: fill17;
+}
+
+@keyframes fill17{
+    85%{
+        color: transparent;
+    }
+    86.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}
+
+span:nth-child(18){
+    animation-name: fill18;
+}
+
+@keyframes fill18{
+    90%{
+        color: transparent;
+    }
+    91.2%{
+        color: #262626;
+    }
+    100%{
+        color: #262626
+    }
+}

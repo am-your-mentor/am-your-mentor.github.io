@@ -1,0 +1,476 @@
+/* Inicio página Blog Movil */
+/* Inicia logo Blog */
+.logo__nav--blog{
+    padding: 0 0 0 1.5rem;     /*em toma al padre más cercano, rem toma al root o body */
+    background-color: var(--color-fondo2);
+     /*em toma al padre más cercano, rem toma al root o body */
+    /* font-size: clamp(1.3rem, 2.2vw, 2.9rem); */
+     /* permite adaptar 3 tamaños de font en el viewport */
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bolder;
+    /* font-weight: bold; */
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Culmina logo Blog */
+
+/* .cabecera__blog{
+    color: var(--color-fondo2);
+} */
+
+/* #blog_muestra{ 
+    para facilitar enlace desde otro punto en la misma página
+    color: var(--color-fondo2);
+} */
+
+.contenedor__blog{
+    /* min-height: fit-content; */
+        /* estaba en código original */
+    min-height: 100vh;
+     /*para aplicar flexbox*/
+    /* padding: 30px 0; */
+    /* padding-bottom: 2em;     */
+}
+
+/* Inicio cabecera Blog */
+.disfrutamos__blog{
+    /* min-height: 85vh; */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+    
+.disfrutamos__blog .izq{
+    background: var(--color-fondo2);
+    /* width: 50%; para width: 1200px */
+    display: inline-block; /*mejora la distancia entre el botón y la últ línea pero es necesario mejoarar lo stamaños de letras y distancia */
+    /* width: 50%; */
+    /* min-height: fit-content; */
+    /* min-height: 100vh; */
+    padding: 20px 0 150px 0;
+     /*solo se coloca acá en el lado izq, al derecho no se le coloca */
+    /* margin-top: -65px; para tapar desborde izq arriba */
+}
+
+.disfrutamos__blog .der{
+    padding: 10px 0 0 0;
+    background: url(../img/imgProfe6.jpg); /* aquí en CSS la img va con ../ */
+    background-size: cover;
+    background-position: center;
+    /* width: 50%; */
+    /* width: 50%; para width: 1200px*/
+    min-height: 100vh;
+    /* margin-top: 5.5rem; */
+}
+
+.disfrutamos__blog .izq .nos{
+    /* font-size: 1.5em; */
+    font-size: clamp(1.9em, 3vw, 5em);
+    /* width: 50%; */
+    /* width: 100%; */
+    margin: 5rem 0 1.5rem 2rem;
+    font-weight: 300;
+    color: var(--color-fondo-y-letra-negro);
+
+}
+
+.disfrutamos__blog .izq .resaltaBlog {
+    color: var(--color-fondo-y-letra-blanco);
+    /* padding: 1rem 0 0 0.7rem; */
+    font-size: clamp(2.9em, 3.8vw, 5em);
+    /* font-size: 3.8em; */
+    font-weight: 600;
+    /* width: 75%; */
+    margin: 0 0 2.5rem 1.8rem;
+    /* font-size: clamp(3.5em, 6vw, 9em); no asume cambios */
+    text-shadow: 1.5px 2px #000;
+    /* margin: -20px 0 0 0; */
+}
+
+.disfrutamos__blog .izq .articulos{
+    /* font-size: 2em; */
+    font-size: clamp(1.9em, 3.2vw, 5.5em);
+    font-weight: bold;
+    line-height: 2.5rem;
+    /* width: 50%; */
+    margin: 2rem 0 1.5rem 2rem;
+    color: var(--color-fondo-y-letra-negro);
+}
+
+.disfrutamos__blog .izq .articulos-semanal{
+    /* font-size: 1.1em; */
+    font-size: clamp(1.5em, 2.6vw, 4em);
+    font-weight: 500;
+    /* left: 22px */
+    /* line-height: 1.8rem; */
+    /* line-height: 42px; */
+    /* width: 80%; */
+    margin: 2.5rem 0 2rem 2rem;
+    color: var(--color-fondo-y-letra-negro);
+}
+/* Fin cabecera Blog */
+
+.contenido__blog{
+    background-color: aqua;
+    height: 100vh;
+}
+
+/* Inicio Footer Movil */
+.pie__contenedor--blog{
+    background-color: #222222;
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision__box--blog{
+    width: 90%;
+    text-align: justify;
+    padding: 3rem auto;
+}
+
+.mision__blog{
+    color: var(--color-fondo1);
+    /* padding: 1rem; */
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: clamp(1.4em, 1.5vw, 1.6em);
+
+    /* font-size: 1.7rem; */
+    /* font-size: clamp(1.4em, 1.6vw, 1.8em); */
+    padding: 4rem 1rem 0 1rem;
+}
+
+.terminos__blog{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.terminos__y--profe--blog{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--color-letra-amarillo);
+}
+
+.terminos__de--servicio--blog, .profe__que--blog{
+    padding: 2em 0;
+    font-size: 1.4rem;
+    /* font-size: clamp(1.1em, 1.1vw, 1.5em); */
+    text-decoration: none;
+    text-align: center;
+}
+
+.terminos__de--servicio--blog:hover,
+.terminos__de--servicio--blog:active{
+    color: var(--color-fondo3);
+    transform: rotate(-2deg); /* rota la palabra */
+
+}
+
+.profe__que--blog span:hover,
+.profe__que--blog span:active{
+    color: var(--color-fondo-y-letra-blanco);
+    transform: rotate(-2deg); /* rota la palabra */
+    /* font-weight: 600; */
+}
+
+.terminos__de--servicio--blog{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.profe__que--blog{
+    color: var(--color-fondo3);
+    padding-top: 3em;
+}
+
+.terminos__creative--blog{
+    /* width: 90%; */
+    font-size: 0.69rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.terminos__creative--blog p{
+    font-weight: 200;
+    /* letter-spacing: 0.1rem; */
+    color: var(--color-fondo-y-letra-gris);
+    padding-bottom: 4rem;
+}
+
+.terminos__creative--blog a{
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+}
+
+.terminos__creative--blog img{
+    width: 8em;
+}
+
+.terminos__creative--blog a:hover,
+.terminos__creative--blog a:active{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.audiovisual__box--blog{
+    width: 90%;
+    text-align: center;
+    border-top: solid 1px var(--color-footer2);
+    padding-bottom: 2rem;
+}
+
+.audiovisual__texto--blog{
+    padding: 1.5rem 0 1rem 0;
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-gris);
+    opacity: 0.9;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.audiovisual__texto--blog span{
+    /* font-size: 1.2rem; */
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+.audiovisual__box--blog a{
+    text-decoration: none;
+}
+
+/* .audiovisual__total--blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.audiovisual__instagram--blog span{
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bold;
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* opacity: 0.5; */
+}
+
+.audiovisual__instagram--blog span:hover,
+.audiovisual__instagram--blog span:active{
+    color: var(--color-letra-amarillo);
+}
+/* Fin Footer Movil */
+
+/***** Inicio Landscape *****/
+@media screen and (min-width: 767px) {
+    /* .forma__cta{
+        width: 25%; */
+    /* .contenedor__blog{ */
+    /* min-height: fit-content; */
+        /* estaba en código original */
+    /* min-height: 75vh; */
+     /*para aplicar flexbox*/
+    /* padding: 30px 0; */
+    /* background-color: var(--color-fondo2); */
+/* } */
+
+/* .disfrutamos__blog .izq{
+    padding: 0.5rem; */
+     /*solo se coloca acá en el lado izq, al derecho no se le coloca */
+
+
+/* .disfrutamos__blog .izq .nos{
+    margin: 6rem 0 1rem 2.1rem;
+} */
+
+
+/* Sección Blog */
+/* .contenido__blog--2{ */
+    /* background-color: aqua; */
+    /* height: 90vh;
+} */
+
+.contenedor__blog{
+    height: 90vh;
+     /*para aplicar flexbox*/
+    }
+
+.disfrutamos__blog{
+    display: flex;
+    flex-direction: row;
+    }
+
+.disfrutamos__blog .izq{
+    /* display: inline-block; */
+    /* mejora la distancia entre el botón y la últ línea pero es necesario mejorar los tamaños de letras y distancia */
+    width: 50%;
+    /* min-height: fit-content; */
+    /* min-height: 100vh; */
+    /* padding: 70px 0 150px 0; */
+     /*solo se coloca acá en el lado izq, al derecho no se le coloca */
+    /* margin-top: -65px; para tapar desborde izq arriba */
+    }
+
+.disfrutamos__blog .der{
+    width: 50%;
+    /* para width: 1200px
+    min-height: 100vh; */
+    }
+
+.disfrutamos__blog .izq .resaltaBlog {
+    font-weight: bolder;
+    }
+
+.disfrutamos__blog .izq .articulos{
+    line-height: 3.1rem;
+    }
+
+.disfrutamos__blog .izq .articulos-semanal{
+    margin-bottom: 3rem;
+    }
+/* } */
+
+/* Inicio Footer Landscape */
+/* @media screen and (min-width: 767px) { */
+
+.pie__contenedor--blog{
+    height: 90vh;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    }
+
+.mision__box--blog{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 3rem 0;
+    }
+
+/* .xmision__box p{
+    width: 90%;
+} */
+
+.mision__blog{
+    padding: 1rem;
+    /* font-size: 2rem; */
+    /* font-size: 1.4rem; */
+    font-size: clamp(1.2em, 1.8vw, 2.1em);
+}
+
+/* .terminos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.terminos__y--profe--blog{
+    /* width: 70%; */
+    /* display: flex; */
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 1rem 0;
+    /* color: var(--color-letra-amarillo); */
+    }
+
+.terminos__de--servicio--blog, .profe__que--blog{
+    padding: 1em;
+    font-size: 1.5rem;
+    /* text-decoration: none; */
+    }
+
+/* .terminos__de--servicio{
+    color: var(--color-fondo-y-letra-blanco);
+} */
+
+/* .xprofe a{ */
+    /* color: var(--color-letra-amarillo); */
+    /* text-align: center; */
+    /* margin: 50px auto; */
+/* } */
+
+/* .profe__que{
+    color: var(--color-fondo3);
+} */
+
+.terminos__creative--blog{
+    width: 70%;
+    font-size: 0.79rem;
+    /* text-align: center; */
+    /* padding-top: 2rem; */
+    }
+
+.terminos__creative--blog p{
+    /* font-size: 0.7rem; */
+    /* font-weight: 100; */
+    /* color: var(--color-fondo-y-letra-gris); */
+    padding-bottom: 0.1rem;
+    }
+
+/* .terminos__creative a{
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+} */
+
+.terminos__creative--blog img{
+    width: 7em;
+    }
+
+.audiovisual__box--blog{
+    width: 70%;
+    /* text-align: center; */
+    /* border-top: solid 1px var(--color-footer2); */
+    padding-bottom: 0.5rem;
+    }
+
+.audiovisual__total--blog{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .audiovisual__texto{ */
+    /* padding: 2rem 0 1rem 0; */
+    /* color: var(--color-letra-amarillo); */
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* opacity: 0.9; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
+/* } */
+
+/* .audiovisual__texto span{
+    font-size: 1.2rem;
+} */
+
+/* .audiovisual__box a{
+    text-decoration: none;
+} */
+
+/* .audiovisual__instagram span{
+    color: var(--color-fondo-y-letra-blanco);
+} */
+
+/* Fin Footer Landscape */
+}

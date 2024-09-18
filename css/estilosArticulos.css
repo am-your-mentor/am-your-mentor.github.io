@@ -1,0 +1,338 @@
+/***** Inicio Cabecera Artículos *****/
+.cabecera__articulos{
+    min-height: 100vh;
+    /* min-height: calc(100% + 10vh); */
+    /* min-height: clamp(95vh, 110vh, 120vh); */
+    background-color: var(--color-fondo2);
+    /* width: fit-content min(100%, max(500px, 100%)); */
+    /* min-width: 100%; */
+    /* min-height: clamp(85vh, 98vh, 120vh); */
+}
+
+.logo__nav--articulos{
+    padding: 1.22rem 0 0 1.5rem; /*em toma al padre más cercano, rem toma al root o body */
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bolder;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+}
+/***** Culmina Cabecera Artículos *****/
+
+
+
+
+
+/* Inicio Dona Movil */
+.Xcabecera__articulos{
+    /* min-height: 10vh; */
+    /* max-height: 190vh; */
+    display: flex;
+    /* display: inline-block; probando para que no se muevan los objetos */
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: var(--color-fondo-y-letra-blanco);
+    padding: 0.1rem 0 0 0;
+    background-color: var(--color-fondo3);
+}
+
+/***** Inicia Cabecera Términos *****/
+.xlogo__nav--articulos{
+    padding: 1.25rem 0 0 1.5rem;     /*em toma al padre más cercano, rem toma al root o body */
+    /* padding: 1.25rem 0 0 1.5rem; */
+    /* padding: 0.7rem 0 0 1rem; */
+     /*em toma al padre más cercano, rem toma al root o body */
+    /* font-size: clamp(1.3rem, 2.2vw, 2.9rem); */
+     /* permite adaptar 3 tamaños de font en el viewport */
+    font-size: clamp(1.3rem, 2.9vw, 2rem); /* permite adaptar 3 tamaños de font en el viewport */
+    font-weight: bold;
+    color: var(--color-fondo-y-letra-blanco);
+    text-shadow: -2px -3px 10px var(--color-fondo-y-letra-negro);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+/* Fin Cabecera */
+
+/* Inicio Footer Movil */
+.pie__contenedor--articulos{
+    background-color: #222222;
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision__box--articulos{
+    width: 90%;
+    text-align: justify;
+    padding: 3rem auto;
+}
+
+.mision__articulos{
+    color: var(--color-fondo1);
+    /* padding: 1rem; */
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-size: clamp(1.4em, 1.5vw, 1.6em);
+
+    /* font-size: 1.7rem; */
+    /* font-size: clamp(1.4em, 1.6vw, 1.8em); */
+    padding: 4rem 1rem 0 1rem;
+}
+
+.terminos__articulos{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.terminos__y--profe--articulos{
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: var(--color-letra-amarillo);
+}
+
+.terminos__de--servicio--articulos, .profe__que--articulos{
+    padding: 2em 0;
+    font-size: 1.4rem;
+    /* font-size: clamp(1.1em, 1.1vw, 1.5em); */
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.terminos__de--servicio--articulos:hover,
+.terminos__de--servicio--articulos:active{
+    color: var(--color-fondo3);
+    transform: rotate(-2deg); /* rota la palabra */
+
+}
+
+.profe__que--articulos span:hover,
+.profe__que--articulos span:active{
+    color: var(--color-fondo-y-letra-blanco);
+    transform: rotate(-2deg); /* rota la palabra */
+    /* font-weight: 600; */
+}
+
+.terminos__de--servicio--articulos{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.profe__que--articulos{
+    color: var(--color-fondo3);
+    padding-top: 3em;
+}
+
+.terminos__creative--articulos{
+    /* width: 90%; */
+    font-size: 0.69rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.terminos__creative--articulos p{
+    font-weight: 200;
+    /* letter-spacing: 0.1rem; */
+    color: var(--color-fondo-y-letra-gris);
+    padding-bottom: 4rem;
+}
+
+.terminos__creative--articulos a{
+    text-decoration: none;
+    color: var(---color-fondo-y-letra-gris);
+}
+
+.terminos__creative--articulos img{
+    width: 8em;
+}
+
+.terminos__creative--articulos a:hover,
+.terminos__creative--articulos a:active{
+    color: var(--color-fondo-y-letra-blanco);
+}
+
+.audiovisual__box--articulos{
+    width: 90%;
+    text-align: center;
+    border-top: solid 1px var(--color-footer2);
+    padding-bottom: 2rem;
+}
+
+.audiovisual__texto--articulos{
+    padding: 1.5rem 0 1rem 0;
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-gris);
+    opacity: 0.9;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+.audiovisual__texto--articulos span{
+    /* font-size: 1.2rem; */
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+.audiovisual__box--articulos a{
+    text-decoration: none;
+}
+
+/* .audiovisual__total--articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.audiovisual__instagram--articulos span{
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-blanco);
+    font-weight: bold;
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* opacity: 0.5; */
+}
+
+.audiovisual__instagram--articulos span:hover,
+.audiovisual__instagram--articulos span:active{
+    color: var(--color-letra-amarillo);
+}
+/* Fin Footer Movil */
+
+
+/***** Inicio Landscape *****/
+@media screen and (min-width: 767px) {
+    /* .forma__cta{
+        width: 25%; */
+    /* .contenedor__blog{ */
+    /* min-height: fit-content; */
+        /* estaba en código original */
+    /* min-height: 75vh; */
+     /*para aplicar flexbox*/
+    /* padding: 30px 0; */
+    /* background-color: var(--color-fondo2); */
+/* } */
+
+/* .disfrutamos__blog .izq{
+    padding: 0.5rem; */
+     /*solo se coloca acá en el lado izq, al derecho no se le coloca */
+
+
+/* .disfrutamos__blog .izq .nos{
+    margin: 6rem 0 1rem 2.1rem;
+} */
+
+
+/* Sección Blog */
+/* .contenido__blog--2{ */
+    /* background-color: aqua; */
+    /* height: 90vh;
+} */
+
+.contenedor__blog{
+    height: 90vh;
+     /*para aplicar flexbox*/
+    }
+
+.disfrutamos__blog{
+    display: flex;
+    flex-direction: row;
+    }
+
+.disfrutamos__blog .izq{
+    /* display: inline-block; */
+    /* mejora la distancia entre el botón y la últ línea pero es necesario mejorar los tamaños de letras y distancia */
+    width: 50%;
+    /* min-height: fit-content; */
+    /* min-height: 100vh; */
+    /* padding: 70px 0 150px 0; */
+     /*solo se coloca acá en el lado izq, al derecho no se le coloca */
+    /* margin-top: -65px; para tapar desborde izq arriba */
+    }
+
+.disfrutamos__blog .der{
+    width: 50%;
+    /* para width: 1200px
+    min-height: 100vh; */
+    }
+
+.disfrutamos__blog .izq .resaltaBlog {
+    font-weight: bolder;
+    }
+
+.disfrutamos__blog .izq .articulos{
+    line-height: 3.1rem;
+    }
+
+.disfrutamos__blog .izq .articulos-semanal{
+    margin-bottom: 3rem;
+    }
+/* } */
+
+/* Inicio Footer Landscape */
+.pie__contenedor--articulos{
+    height: 90vh;
+    }
+
+.mision__box--articulos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0 3rem 0;
+    }
+
+.mision__articulos{
+    padding: 1rem;
+    font-size: clamp(1.2em, 1.8vw, 2.1em);
+    }
+
+.terminos__y--profe--articulos{
+    flex-direction: row;
+    margin: 1rem 0;
+    }
+
+.terminos__de--servicio--articulos, .profe__que--articulos{
+    padding: 1em;
+    font-size: 1.5rem;
+    }
+
+.terminos__creative--articulos{
+    width: 70%;
+    font-size: 0.79rem;
+    }
+
+.terminos__creative--articulos p{
+    padding-bottom: 0.1rem;
+    }
+
+
+.terminos__creative--articulos img{
+    width: 7em;
+    }
+
+.audiovisual__box--articulos{
+    width: 70%;
+    padding-bottom: 0.5rem;
+    }
+
+.audiovisual__texto--articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* }         */
+    /***** Fin Footer Landscape *****/
+}

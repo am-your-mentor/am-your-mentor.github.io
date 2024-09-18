@@ -1,0 +1,109 @@
+/* Inicio Somos profesores Moil */
+.somos__caja{
+    background: url(../img/imgProfe5.jpg); /* aquí en CSS la img va con ../ */
+    background-attachment: fixed;
+     /* ojo ver si al quitar fixed de al lado del url en background, va con attachment y no con image*/
+    background-image: fixed; 
+    background-size: cover;
+    /* min-height: clamp(90vmax, 130vh, 190vh); */
+    /* aún corregir en caliente */
+    /* display: flex; */
+    /* align-items: center; */
+    /* min-height: 130px;  */
+    min-height: 110vh;
+    /* display:inline-table; */
+
+/* alínea verticalmente con display: flex y align-items: center; */
+    /* display: flex; */
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center; */
+
+    /* padding: 1rem; */
+    /* padding: 5rem 1rem 0 1rem; */
+    /* display: grid; */
+    /* place-content: center; */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    /* display: inline-block; */
+    /* place-self: center; */
+
+    /* position: relative; */
+    /* padding: 1rem 0 1rem 0; */
+    padding: 3em 0 1em 0;
+}
+
+.somos__profes{  /* ojo se ensancha al crecer el viewport */
+    /* position: absolute;  */
+    padding: 0.5rem;
+    /* padding: 1rem 0 1rem 0; */
+    /* margin: 2% 0; */
+
+    /* top: 40%; */
+/* margin-top: -100px; */
+    /* left: 20%; */
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    /* width: 80%; */
+    /* height: 70%; */
+    /* padding: 50% auto 15% auto; */
+
+    /* justify-content:space-evenly;
+        /* probando pxq se desborda hacia abajo*/
+    /* padding: 6rem 1.5rem 3.5vh 1.5rem; */
+    /* padding: 2rem 0 0 0; */
+    /*ancho de la caja con frase */
+    
+}
+
+.contenido__profesores{
+    border-radius: 30px;
+    background-image: linear-gradient(180deg, var(--color-fondo3b) 0%, var(--color-fondo1b) 100%);
+        /* background-color: rgba(126, 240, 128, 0.568); */
+    /* background-color: var(--color-fondo-y-letra-cuatro); */
+    /* box-shadow: 4px 4px 4px 4px rgba(207, 216, 214, 0.863), 1px 1px 1px 1px rgba(79, 93, 105, 0.698); */
+    box-shadow: 4px 4px 4px 4px rgba(126, 235, 99, 0.563), 1px 1px 0px 1px rgba(255, 222, 90, 0.571);
+    /* text-shadow: 0.1288rem 0.1288rem  #000; */
+    text-shadow: 5px 5px 5px #000;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    /* background-color: rgba(255, 221, 90, 0.698); */
+    /* box-shadow: 4px 4px 4px 4px rgba(255, 222, 90, 0.863), 1px 1px 1px 1px hsla(48, 100%, 68%, 0.698); */
+    /* color: var(--color-letra-amarillo); */
+    color: var(--color-fondo-y-letra-blanco);
+    text-align: center;
+    /* font-size: 1.6em; */
+    font-size: clamp(1.4rem, 4vw, 3.4rem);
+    /* font-size: clamp(1.7em, 5.8vw, 3.2em); */
+    padding: 0.5em 1em;
+    width: 85%;
+    /* margin: 1em; */
+    /* padding: 0.9rem 0.9rem 0.9rem 0.9rem; */
+}
+
+.contenido__profesores span{
+    /* text-decoration: underline var(--color-letra-amarillo); */
+    /* border-bottom: 3.5px solid var(--color-letra-amarillo); */
+    /* background-image: linear-gradient(100deg, var(--color-letra-blanco) 0%,  var(--color-fondo2) 100%); */
+    background-image: linear-gradient(100deg, var(--color-fondo2) 0%,  var(--color-fondo2) 25%, var(--color-fondo2) 50%);
+    /* background-image: linear-gradient(100deg, var(--color-letra-amarillo) 25%, var(--color-letra-amarillo) 50%); */
+    background-repeat: no-repeat;
+    background-size: 100% .3em;
+    background-position: 0 90%;
+    /* color: var(--color-fondo-y-letra-gris); */
+    /* text-shadow: 5px 5px 5px #000; */
+    /* text-shadow: 0.1288rem 0.1288rem 1px #000; */
+    /* text-shadow: 5px 5px 5px var(--color-fondo2); */
+}
+/* Fin Somos profesores Movil */
